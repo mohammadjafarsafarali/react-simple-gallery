@@ -1,13 +1,10 @@
 .galleryBody{
 	display:grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto;
 	grid-gap: 12px;
     padding: 20px 40px;
 }  
-.bigItem{
-	grid-column: 2 / 4;
-	grid-row: 1 / 3;
-}
+
 .galleryItemBody{
  width: 100%;
  min-height: 150px;
@@ -42,4 +39,14 @@
 }
 .galleryItemBody:hover .galleryImageOverlay{
     background-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (min-width: 426px){
+	.bigItem{
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+    }
+    .galleryBody{
+        grid-template-columns: auto auto auto auto;
+    } 
 }
