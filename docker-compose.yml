@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  main-web:
+    container_name: main-web_web
+    image: node:18.9-alpine3.16
+    ports:
+      - 127.0.0.1:${NEXTJS_EXPOSED_PORT:-0}:3000
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: >
+      /bin/sh -c "npm install -f &&
+        npm start"
+    healthcheck:
+      test: [ "CMD-SHELL", "wget -O /dev/null http://localhost:3000 || exit 1" ]
+      timeout: 30s
+      interval: 20s
+      retries: 10
+
+  nginx:
+    container_name: main-web_nginx
+    image: ghcr.io/getimages/nginx:1.23.0-alpine
+    ports:
+      - ${APP_EXPOSED_PORT:-0}:80
+    volumes:
+      - ./.docker/nginx/conf:/etc/nginx/conf.d
+      - ./.docker/nginx/logs/:/var/log/nginx
+    links:
+      - main-web
+    restart: always
+    depends_on:
+      main-web:
+        condition: service_healthy

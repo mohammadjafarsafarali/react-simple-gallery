@@ -1,0 +1,47 @@
+2022/09/27 01:05:47 [notice] 1#1: using the "epoll" event method
+2022/09/27 01:05:47 [notice] 1#1: nginx/1.23.0
+2022/09/27 01:05:47 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/09/27 01:05:47 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/09/27 01:05:47 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/27 01:05:47 [notice] 1#1: start worker processes
+2022/09/27 01:05:47 [notice] 1#1: start worker process 50
+2022/09/27 01:05:47 [notice] 1#1: start worker process 52
+2022/09/27 01:05:47 [notice] 1#1: start worker process 54
+2022/09/27 01:05:47 [notice] 1#1: start worker process 56
+2022/09/27 01:05:47 [emerg] 50#50: io_setup() failed (38: Function not implemented)
+2022/09/27 01:05:47 [emerg] 52#52: io_setup() failed (38: Function not implemented)
+2022/09/27 01:05:47 [emerg] 54#54: io_setup() failed (38: Function not implemented)
+2022/09/27 01:05:47 [emerg] 56#56: io_setup() failed (38: Function not implemented)
+2022/09/27 01:15:30 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/09/27 01:15:30 [notice] 50#50: gracefully shutting down
+2022/09/27 01:15:30 [notice] 50#50: exiting
+2022/09/27 01:15:30 [notice] 52#52: gracefully shutting down
+2022/09/27 01:15:30 [notice] 54#54: gracefully shutting down
+2022/09/27 01:15:30 [notice] 54#54: exiting
+2022/09/27 01:15:30 [notice] 56#56: gracefully shutting down
+2022/09/27 01:15:30 [notice] 50#50: exit
+2022/09/27 01:15:30 [notice] 52#52: exiting
+2022/09/27 01:15:30 [notice] 54#54: exit
+2022/09/27 01:15:30 [notice] 56#56: exiting
+2022/09/27 01:15:30 [notice] 52#52: exit
+2022/09/27 01:15:30 [notice] 56#56: exit
+2022/09/27 01:15:30 [notice] 1#1: signal 17 (SIGCHLD) received from 50
+2022/09/27 01:15:30 [notice] 1#1: worker process 50 exited with code 0
+2022/09/27 01:15:30 [notice] 1#1: worker process 52 exited with code 0
+2022/09/27 01:15:30 [notice] 1#1: worker process 54 exited with code 0
+2022/09/27 01:15:30 [notice] 1#1: worker process 56 exited with code 0
+2022/09/27 01:15:30 [notice] 1#1: exit
+2022/09/27 01:16:18 [notice] 1#1: using the "epoll" event method
+2022/09/27 01:16:18 [notice] 1#1: nginx/1.23.0
+2022/09/27 01:16:18 [notice] 1#1: built by gcc 11.2.1 20220219 (Alpine 11.2.1_git20220219) 
+2022/09/27 01:16:18 [notice] 1#1: OS: Linux 5.10.104-linuxkit
+2022/09/27 01:16:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/27 01:16:18 [notice] 1#1: start worker processes
+2022/09/27 01:16:18 [notice] 1#1: start worker process 51
+2022/09/27 01:16:18 [notice] 1#1: start worker process 53
+2022/09/27 01:16:18 [notice] 1#1: start worker process 55
+2022/09/27 01:16:18 [notice] 1#1: start worker process 57
+2022/09/27 01:16:18 [emerg] 53#53: io_setup() failed (38: Function not implemented)
+2022/09/27 01:16:18 [emerg] 51#51: io_setup() failed (38: Function not implemented)
+2022/09/27 01:16:18 [emerg] 55#55: io_setup() failed (38: Function not implemented)
+2022/09/27 01:16:18 [emerg] 57#57: io_setup() failed (38: Function not implemented)
